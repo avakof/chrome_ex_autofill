@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Autofill Data</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 20px auto; }
+    h2 { margin-top: 0; }
+    .form-entry { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+    .form-entry pre { background: #f8f8f8; padding: 6px; border-radius: 3px; }
+    button { margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Manage Autofill Data</h2>
+  <div id="dataList">Loading...</div>
+  <div id="api-key-section" style="margin-top:20px;">
+    <label for="apiKey"><b>OpenAI API Key:</b></label><br>
+    <input type="password" id="apiKey" style="width:70%;margin-top:4px;">
+    <button id="saveKey" style="width:28%;margin-left:2%;">Save API Key</button>
+    <span id="apiKeyStatus" style="margin-left:8px;color:#007700;"></span>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html> 

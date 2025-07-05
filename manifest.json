@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Autofill",
+  "version": "1.0",
+  "description": "Autofill forms using ChatGPT and user history.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"]
+} 
