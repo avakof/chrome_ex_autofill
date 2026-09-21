@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Autofill",
+  "name": "Form Autofill",
   "version": "1.0",
-  "description": "Autofill forms using ChatGPT and user history.",
+  "description": "Autofill forms using a language model and user history.",
   "permissions": [
     "scripting",
     "activeTab",
